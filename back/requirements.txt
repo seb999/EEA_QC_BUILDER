@@ -1,0 +1,16 @@
+# Web Framework
+flask>=3.0.0
+flask-cors>=4.0.0
+werkzeug>=3.0.0
+
+# SQL Parsing
+sqlglot>=25.0.0
+
+# LLM/AI
+openai>=1.0.0
+
+# HTTP Requests
+requests>=2.31.0
+
+# Environment Configuration
+python-dotenv>=1.0.0
