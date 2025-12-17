@@ -1,0 +1,43 @@
+╔═══════════════════════════════════════════════════════════════╗
+║         QC PARSER SERVICE - SIMPLIFIED STRUCTURE              ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📁 back/
+│
+├── 📊 parser/                    ← FOLDER 1: CSV → JSON
+│   ├── qc_parser.py              Parse QC rules from CSV
+│   └── qc_semantic_analyzer.py   Add semantic analysis
+│
+├── 🤖 dataset_generator/         ← FOLDER 2: JSON + LLM → Datasets  
+│   └── generator.py              Generate valid/invalid datasets
+│
+├── ⭐ app_simple.py              ← MAIN FILE TO RUN!
+│
+├── 🔧 qc_parser_service.py       [OLD - still works]
+├── 🔐 .env                        LLM credentials
+├── 📦 requirements.txt            Dependencies
+└── 📖 README.md                   This guide
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 QUICK GUIDE:
+
+1️⃣  Want to parse CSV and get JSON?
+    → Look in parser/ folder
+    
+2️⃣  Want to generate datasets with LLM?
+    → Look in dataset_generator/ folder
+    
+3️⃣  Want to modify API endpoints?
+    → Edit app_simple.py
+    
+4️⃣  Want to change LLM prompts?
+    → Edit dataset_generator/generator.py
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 TO RUN:
+
+    venv\Scripts\python.exe app_simple.py --host 127.0.0.1 --port 5000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

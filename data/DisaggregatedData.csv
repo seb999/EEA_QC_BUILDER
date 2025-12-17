@@ -1,0 +1,21 @@
+Field name,PK,Required,ReadOnly,Field description,Field type,Extra information
+monitoringSiteIdentifier,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/monitoringSiteIdentifier,TEXT,
+monitoringSiteIdentifierScheme,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/monitoringSiteIdentifierScheme,CODELIST,eionetMonitoringSiteCode;euMonitoringSiteCode
+parameterWaterBodyCategory,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/parameterWaterBodyCategory,LINK,
+observedPropertyDeterminandCode,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/observedPropertyDeterminandCode,LINK,
+procedureAnalysedMatrix,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/procedureAnalysedMatrix,LINK,
+resultUom,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultUom,LINK,
+phenomenonTimeSamplingDate,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/phenomenonTimeSamplingDate,DATE,
+sampleIdentifier,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/sampleIdentifier,TEXT,
+resultObservedValue,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultObservedValue,NUMBER_DECIMAL,
+resultQualityObservedValueBelowLOQ,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultQualityObservedValueBelowLOQ,CODELIST,0;1
+procedureLOQValue,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/procedureLOQValue,NUMBER_DECIMAL,
+parameterSampleDepth,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/parameterSampleDepth,NUMBER_DECIMAL,
+parameterSedimentDepthSampled,false,false,false,http://dd.eionet.europa.eu/datasets/latest/WISE-SoE_WaterQualityICM/tables/DisaggregatedData/elements/parameterSedimentDepthSampled,TEXT,
+parameterSpecies,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/parameterSpecies,LINK,
+resultMoisture,false,false,false,http://dd.eionet.europa.eu/datasets/latest/WISE-SoE_WaterQualityICM/tables/DisaggregatedData/elements/resultMoisture,NUMBER_DECIMAL,
+resultFat,false,false,false,http://dd.eionet.europa.eu/datasets/latest/WISE-SoE_WaterQualityICM/tables/DisaggregatedData/elements/resultFat,NUMBER_DECIMAL,
+resultExtractableLipid,false,false,false,http://dd.eionet.europa.eu/datasets/latest/WISE-SoE_WaterQualityICM/tables/DisaggregatedData/elements/resultExtractableLipid,NUMBER_DECIMAL,
+resultLipid,false,false,false,http://dd.eionet.europa.eu/datasets/latest/WISE-SoE_WaterQualityICM/tables/DisaggregatedData/elements/resultLipid,NUMBER_DECIMAL,
+resultObservationStatus,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultObservationStatus,LINK,
+remarks,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/Remarks,TEXTAREA,

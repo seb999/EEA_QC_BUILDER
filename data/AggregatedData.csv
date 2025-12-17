@@ -1,0 +1,25 @@
+Field name,PK,Required,ReadOnly,Field description,Field type,Extra information
+monitoringSiteIdentifier,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/monitoringSiteIdentifier,TEXT,
+monitoringSiteIdentifierScheme,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/monitoringSiteIdentifierScheme,CODELIST,eionetMonitoringSiteCode;euMonitoringSiteCode
+parameterWaterBodyCategory,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/parameterWaterBodyCategory,LINK,
+observedPropertyDeterminandCode,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/observedPropertyDeterminandCode,LINK,
+procedureAnalysedMatrix,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/procedureAnalysedMatrix,LINK,
+resultUom,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultUom,LINK,
+phenomenonTimeReferenceYear,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/phenomenonTimeReferenceYear,NUMBER_INTEGER,
+parameterSamplingPeriod,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/parameterSamplingPeriod,TEXT,
+procedureLOQValue,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/procedureLOQValue,NUMBER_DECIMAL,
+resultNumberOfSamples,false,true,false,http://dd.eionet.europa.eu/dataelements/latest/resultNumberOfSamples,NUMBER_INTEGER,
+resultQualityNumberOfSamplesBelowLOQ,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultQualityNumberOfSamplesBelowLOQ,NUMBER_INTEGER,
+resultQualityMinimumBelowLOQ,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultQualityMinimumBelowLOQ,CODELIST,1;0
+resultMinimumValue,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultMinimumValue,NUMBER_DECIMAL,
+resultQualityMeanBelowLOQ,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultQualityMeanBelowLOQ,CODELIST,1;0
+resultMeanValue,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultMeanValue,NUMBER_DECIMAL,
+resultQualityMaximumBelowLOQ,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultQualityMaximumBelowLOQ,CODELIST,1;0
+resultMaximumValue,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultMaximumValue,NUMBER_DECIMAL,
+resultQualityMedianBelowLOQ,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultQualityMedianBelowLOQ,CODELIST,1;0
+resultMedianValue,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultMedianValue,NUMBER_DECIMAL,
+resultStandardDeviationValue,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultStandardDeviationValue,NUMBER_DECIMAL,
+procedureAnalyticalMethod,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/procedureAnalyticalMethod,TEXT,
+parameterSampleDepth,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/parameterSampleDepth,NUMBER_DECIMAL,
+resultObservationStatus,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/resultObservationStatus,LINK,
+remarks,false,false,false,http://dd.eionet.europa.eu/dataelements/latest/Remarks,TEXTAREA,
