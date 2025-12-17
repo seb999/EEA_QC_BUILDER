@@ -54,16 +54,61 @@ A full-stack application for parsing and analyzing Quality Control (QC) rules fr
 - **Node.js** 16+ (for frontend)
 - **Python** 3.12+ (for backend)
 
-### Quick Start
+### First-Time Setup
+
+#### Backend Setup
+
+1. **Navigate to backend directory**
+   ```powershell
+   cd back
+   ```
+
+2. **Create Python virtual environment** (if not already created)
+   ```powershell
+   py -m venv venv
+   ```
+
+3. **Activate the virtual environment** (VSCode integrated terminal)
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+   .\venv\Scripts\Activate.ps1
+   ```
+
+   You should see `(venv)` appear at the start of your prompt.
+
+4. **Install Python dependencies**
+   ```powershell
+   pip install -r requirements.txt
+   ```
+
+#### Frontend Setup
+
+1. **Navigate to frontend directory**
+   ```bash
+   cd front
+   ```
+
+2. **Install Node.js dependencies**
+   ```bash
+   npm install
+   ```
+
+### Quick Start (After Setup)
 
 #### 1. Start the Backend
 
-```bash
+```powershell
 cd back
-venv/Scripts/python.exe qc_parser_service.py --host 127.0.0.1 --port 5000
+.\venv\Scripts\Activate.ps1
+python main.py
 ```
 
 The backend will be available at `http://127.0.0.1:5000`
+
+**Note**: If you encounter PowerShell execution policy errors, run:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+```
 
 #### 2. Start the Frontend
 
@@ -232,13 +277,13 @@ npm run preview      # Preview production build
 
 ### Backend Development
 
-```bash
+```powershell
 cd back
-python -m venv venv                    # Create virtual environment (if needed)
-venv/Scripts/activate                  # Activate venv (Windows)
-pip install -r requirements.txt        # Install dependencies
-python qc_parser_service.py            # Start server
-python test_service.py                 # Run tests
+py -m venv venv                              # Create virtual environment (if needed)
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process  # Allow script execution
+.\venv\Scripts\Activate.ps1                  # Activate venv (Windows PowerShell)
+pip install -r requirements.txt              # Install dependencies
+python main.py                               # Start server
 ```
 
 ## Features in Detail
@@ -289,11 +334,20 @@ CORS(app)  # Allows all origins by default
 
 ## Troubleshooting
 
+### PowerShell Script Execution Error
+If you get an error about unsigned scripts when activating the virtual environment:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+.\venv\Scripts\Activate.ps1
+```
+This only affects the current terminal session and is safe.
+
 ### Backend doesn't start
-- Make sure Python 3.12+ is installed
-- Activate the virtual environment: `venv/Scripts/activate`
+- Make sure Python 3.12+ is installed (check with `py --version`)
+- Activate the virtual environment: `.\venv\Scripts\Activate.ps1`
 - Install dependencies: `pip install -r requirements.txt`
 - Check if port 5000 is already in use
+- Verify you're in the `back` directory
 
 ### Frontend can't connect to backend
 - Verify backend is running at http://127.0.0.1:5000
